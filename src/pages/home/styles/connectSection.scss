@@ -1,5 +1,4 @@
 .connect {
-  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -41,6 +40,7 @@
 .message {
   position: relative;
   margin: 2rem 0 0;
+  height: 300px;
   width: 400px;
   display: grid;
   grid-template-rows: 45px 1fr;
@@ -93,9 +93,8 @@
   }
 
   textarea {
-    margin: 1rem 0 0;
+    margin: 1rem 0 2rem;
     padding: 1rem;
-    height: 300px;
     width: 100%;
     resize: none;
     outline: none;

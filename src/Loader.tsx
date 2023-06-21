@@ -2,6 +2,7 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 
 import "./Loader.scss";
+import { setSession } from "./util/sessionStorage";
 
 const pathVariant: Variants = {
   hidden: { opacity: 0, pathLength: 0 },
@@ -40,7 +41,10 @@ const Loader = (props: LoaderProps) => {
           initial="hidden"
           animate="visible"
           variants={mainVariant}
-          onAnimationComplete={() => set(false)}
+          onAnimationComplete={() => {
+            set(false);
+            setSession("loading", false);
+          }}
         >
           <motion.ellipse
             variants={pathVariant}
