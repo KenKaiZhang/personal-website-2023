@@ -1,0 +1,13 @@
+.navigation-bar {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  z-index: 30;
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+}

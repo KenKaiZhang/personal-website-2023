@@ -1,0 +1,23 @@
+[
+  {
+    "name": "UnBounded",
+    "url": "https://unboundedsw.com",
+    "image": "/images/unbounded.png",
+    "current": false,
+    "summary": "An place for people to discover global fashion."
+  },
+  {
+    "name": "YesNo",
+    "url": "https://yesno.com",
+    "image": "/images/yesno.png",
+    "current": true,
+    "summary": "The fastest and easiest way to get people's opinions."
+  },
+  {
+    "name": "Liveloop",
+    "url": null,
+    "image": "/images/liveloop.png",
+    "current": false,
+    "summary": "Easily locate UCSC loop buses 24/7."
+  }
+]

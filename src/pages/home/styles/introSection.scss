@@ -1,0 +1,31 @@
+.intro {
+  padding: 0 2rem 0;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+}
+
+.name {
+  position: absolute;
+  top: 40%;
+}
+
+.resume-button {
+  position: absolute;
+  top: 55%;
+  height: 60px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background: var(--main-accent);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    // color: var(--main-accent);
+    background: var(--main-accent-fade);
+  }
+}

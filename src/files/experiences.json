@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Dolby Laboratories",
+    "duration": "Jun 2022 - Jun 2023",
+    "role": "Software QA Engineer Intern",
+    "location": "Sunnyvale, CA",
+    "summary": [
+      "Developed automation scripts that helped the team work quickly and effectively",
+      "Created new tests to increase coverage",
+      "Extracted and analyzed data to help the team decide on the best approach to developing tests",
+      "Developed API for communication between Python and required test tools for testing"
+    ]
+  },
+  {
+    "name": "UCSC Aquatics and Recreation",
+    "duration": "Jun 2020 - Jun 2022",
+    "role": "Lifeguard",
+    "location": "Santa Cruz, CA",
+    "summary": [
+      "Rescue distressed swimmers and perform CPR and First-Aid",
+      "Enforced pool rule to ensure the safety of people",
+      "Developed teamwork skills to provide the best possible treatment during emergencies"
+    ]
+  }
+]

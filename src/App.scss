@@ -1,0 +1,31 @@
+:root {
+  background: var(--main-dark-color);
+  --main-dark-color: #131313;
+  --main-light-color: #fefefe;
+  --main-accent: #1454d4;
+  --main-accent-fade: #1454d477;
+  --secondary-accent: #52e5c0;
+  --secondary-accent-fade: #52e5c077;
+  --transparent-dark: #0e0e0e4d;
+  --transparent-light: #fefefe20;
+  --radius: 10px;
+  --transition: 0.5s ease;
+}
+
+:root * {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  list-style: none;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

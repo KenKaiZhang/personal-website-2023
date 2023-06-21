@@ -1,0 +1,35 @@
+.page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--main-dark-color);
+  overflow-x: hidden;
+
+  section {
+    position: relative;
+    max-width: 1000px;
+    animation-name: slideup;
+    animation-duration: 1s;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+.background {
+  position: absolute;
+  background: #ffffff15;
+  height: 100%;
+  width: 100vw;
+  z-index: 0;
+}

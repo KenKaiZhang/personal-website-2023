@@ -1,0 +1,67 @@
+.skills-section {
+  position: relative;
+  margin: 2rem;
+  height: 700px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    position: absolute;
+    top: 4rem;
+    font-weight: 700;
+  }
+  ul {
+    height: 80%;
+    max-height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  li {
+    position: relative;
+    padding: 1rem;
+    aspect-ratio: 3/4;
+    width: 100%;
+
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(var(--main-accent-fade), var(--secondary-accent-fade));
+    border-radius: var(--radius);
+
+    h4 {
+      font-weight: 700;
+    }
+  }
+
+  #goto {
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.skills {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  margin: 0.5rem;
+  flex: 0 0 auto;
+  height: 45px;
+  width: 120px;
+  border-radius: var(--radius);
+  background: var(--transparent-dark);
+}

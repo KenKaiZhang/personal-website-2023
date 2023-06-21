@@ -1,0 +1,134 @@
+.projects {
+  position: relative;
+  margin: 1rem 0 1rem;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  height: 100%;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  transition: var(--transition);
+}
+
+.project-card {
+  position: relative;
+  height: 100%;
+  max-height: 300px;
+  max-width: 500px;
+  border-radius: var(--radius);
+  flex: 0 0 100%;
+  scale: 75%;
+  opacity: 30%;
+  transition: var(--transition);
+  cursor: pointer;
+  pointer-events: none;
+
+  .current-badge {
+    position: absolute;
+    top: -1.25rem;
+    right: -2rem;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    background: var(--main-accent);
+  }
+
+  .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: var(--transition);
+
+    &:hover {
+      opacity: 45%;
+
+      ~ h3 {
+        bottom: 2.5rem;
+      }
+      ~ p {
+        opacity: 1;
+      }
+    }
+  }
+
+  h3 {
+    position: absolute;
+    left: 1rem;
+    bottom: 1.5rem;
+    transition: var(--transition);
+  }
+
+  p {
+    position: absolute;
+    opacity: 0;
+    left: 1rem;
+    bottom: 1.25rem;
+    transition: var(--transition);
+  }
+
+  a {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    height: 35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    background: var(--transparent-light);
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      background: var(--transparent-dark);
+    }
+  }
+}
+
+.center {
+  scale: 1;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.navigation {
+  position: absolute;
+  height: 45px;
+  width: 600px;
+
+  button {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 30;
+    transition: var(--transition);
+
+    svg {
+      pointer-events: none;
+    }
+    &:hover {
+      background: var(--transparent-light);
+    }
+  }
+  #left {
+    left: 0;
+  }
+  #right {
+    right: 0;
+  }
+}
